@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Cuevas_Serrano_Ignacio_Practica1</string>
+    <string name="proyect_name">Matemáticapp</string>
+    <string name="proyect_version">1.01v</string>
+    <string name="description">Foto de inicio</string>
+    <string name="btn_play">Jugar</string>
+    <string name="btn_score">Marcador</string>
+    <string name="btn_exit">Salir</string>
+    <string name="text_help">¡Bienvenido a Matemáticapp! La aplicación que te permite entrenar tus habilidades de cálculo mientras te diviertes.\n\nDispones de 30 segundos para resolver el mayor número de operaciones matemáticas posible. Consigues 1 punto por cada cuenta realizada con éxito. ¡Pero cuidado, los fallos restan puntos!\n\nPuedes elegir entre tres niveles de dificultad:\n\n<b>Fácil</b> (suma y resta)\n<b>Medio</b> (suma, resta y producto)\n<b>Difícil</b> (suma resta, producto y cociente).\n\nLas puntuacuones se pueden observar en la ventana de marcadores.\n\n¿Aceptas el reto?</string>
+    <string name="btn_back">Volver</string>
+    <string name="item_help">Ayuda</string>
+    <string name="item_conf">Configuración</string>
+    <string name="hint_name">Nombre de jugador</string>
+    <string name="difficulty_default">Medio</string>
+    <string name="cb_sound">Sonido</string>
+    <string name="num">0</string>
+    <string name="operator">+</string>
+    <string name="btn_comprobar">Comprobar</string>
+    <string name="player_name">Nombre de jugador</string>
+    <string name="player_score">Puntuación</string>
+    <string name="dialog_title">Fin de juego</string>
+    <string name="btn_save">Guardar</string>
+</resources>

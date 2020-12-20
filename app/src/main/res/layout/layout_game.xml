@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <!--    <Chronometer-->
+    <!--        android:id="@+id/chrono"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <TextView
+        android:id="@+id/tvCountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/num"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPuntos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/num"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOperand1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/num"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOperator"
+        app:layout_constraintEnd_toStartOf="@+id/tvOperator"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvOperator" />
+
+    <TextView
+        android:id="@+id/tvOperator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/operator"
+        android:textSize="75sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvOperand2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvOperand1"
+        app:layout_constraintTop_toBottomOf="@+id/tvCountdown" />
+
+    <TextView
+        android:id="@+id/tvOperand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/num"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOperator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvOperator"
+        app:layout_constraintTop_toTopOf="@+id/tvOperator" />
+
+    <EditText
+        android:id="@+id/etResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:labelFor="@id/etResult"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOperator" />
+
+    <Button
+        android:id="@+id/btnComprobar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/btn_comprobar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etResult" />
+</androidx.constraintlayout.widget.ConstraintLayout>
